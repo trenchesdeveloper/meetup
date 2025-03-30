@@ -136,3 +136,4 @@
 /Users/samuelopeyemi/Desktop/dotnet-learn/meetup/API/bin/Debug/net8.0/Microsoft.IdentityModel.Protocols.dll
 /Users/samuelopeyemi/Desktop/dotnet-learn/meetup/API/bin/Debug/net8.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 /Users/samuelopeyemi/Desktop/dotnet-learn/meetup/API/obj/Debug/net8.0/API.sourcelink.json
+/Users/samuelopeyemi/Desktop/dotnet-learn/meetup/API/bin/Debug/net8.0/Data/UserSeedData.json

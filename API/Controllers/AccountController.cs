@@ -36,27 +36,27 @@ public class AccountController(DataContext context, ITokenService tokenService) 
 	public async Task<ActionResult<AppUser>> Register(RegisterDto registerDto)
 	{
 
+		return Ok();
+		// if (await UserExists(registerDto.UserName))
+		// {
+		// 	return BadRequest("Username is taken");
+		// }
+		// using var hmac = new HMACSHA512();
 
-		if (await UserExists(registerDto.UserName))
-		{
-			return BadRequest("Username is taken");
-		}
-		using var hmac = new HMACSHA512();
+		// var user = new AppUser
+		// {
+		// 	Username = registerDto.UserName.ToLower(),
+		// 	PasswordHash = hmac.ComputeHash(Encoding.UTF8.GetBytes(registerDto.Password)),
+		// 	PasswordSalt = hmac.Key,
+		// 	Name = registerDto.Name
+		// };
 
-		var user = new AppUser
-		{
-			Username = registerDto.UserName.ToLower(),
-			PasswordHash = hmac.ComputeHash(Encoding.UTF8.GetBytes(registerDto.Password)),
-			PasswordSalt = hmac.Key,
-			Name = registerDto.Name
-		};
+		// context.Add(user);
 
-		context.Add(user);
+		// await context.SaveChangesAsync();
 
-		await context.SaveChangesAsync();
-
-		// return user with 201 status code
-		return CreatedAtAction("GetUser", new { id = user.Id }, user);
+		// // return user with 201 status code
+		// return CreatedAtAction("GetUser", new { id = user.Id }, user);
 	}
 
 	private async Task<bool> UserExists(string username)
