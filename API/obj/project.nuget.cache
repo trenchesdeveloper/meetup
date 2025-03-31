@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "kY5xKmobZ1A=",
+  "dgSpecHash": "Ze22gqxpsYg=",
   "success": true,
   "projectFilePath": "/Users/samuelopeyemi/Desktop/dotnet-learn/meetup/API/API.csproj",
   "expectedPackageFiles": [
+    "/Users/samuelopeyemi/.nuget/packages/automapper/14.0.0/automapper.14.0.0.nupkg.sha512",
     "/Users/samuelopeyemi/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
     "/Users/samuelopeyemi/.nuget/packages/microsoft.aspnetcore.authentication.jwtbearer/8.0.14/microsoft.aspnetcore.authentication.jwtbearer.8.0.14.nupkg.sha512",
     "/Users/samuelopeyemi/.nuget/packages/microsoft.bcl.asyncinterfaces/6.0.0/microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
